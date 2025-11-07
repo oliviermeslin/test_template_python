@@ -4,12 +4,13 @@ project:
     - index.qmd
     - chapters/chapter1.qmd
     - notebooks/notebook1.qmd
-
+  execute-dir: project
+  
 website:
   page-navigation: true
   title: "Template for training resources in Python"
   # In the two URLs below:
-  # - replace AIML4OS by  the Github account/organization your repository is hosted by;
+  # - replace AIML4OS by the Github account/organization your repository is hosted by;
   # - replace AIML4OS-template-quarto-python by the name of your repository.
   # If your repo is on the AIML4OS organization, change only the name of the repo.
   site-url: "https://oliviermeslin.github.io/test_template_python"
