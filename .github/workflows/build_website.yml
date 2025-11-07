@@ -28,8 +28,12 @@ jobs:
       - name: Restore environment
         run: uv sync
 
+      # Install mc
+      - name: Install mc
+        uses: hostwithquantum/setup-mc@main
+
       # Download data
-      - name: Run init.sh script
+      - name: Download data
         run: bash ./sspcloud/download_data.sh
 
       # Set up Quarto
