@@ -54,6 +54,7 @@ This section demonstrates how to create and display a simple pandas DataFrame.
 ```{python}
 from great_tables import GT, html
 from great_tables.data import sza
+import pandas as pd
 import polars as pl
 from polars import col as c
 import polars.selectors as cs
@@ -80,3 +81,10 @@ sza_pivot = (
     .sub_missing(missing_text="")
 )
 ```
+
+```{python}
+data = pl.from_pandas(pd.read_csv("../../data/NAISSANCES_COM_1019.csv", sep = ';'))
+data.head()
+```
+
+
